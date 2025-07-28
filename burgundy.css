@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+/* Card styling */
+.card {
+    background-color: #F5E6E8;
+    color: #000000;
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 3px solid #000000;
+    text-align: center;
+}
+
+.card-content {
+    margin-bottom: 2.5rem;
+}
+
+/* Typography */
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+.body-text {
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Link styling */
+a:not(.pill-button) {
+    color: #8B1538;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:not(.pill-button):hover,
+a:not(.pill-button):active {
+    color: #000000;
+}
+
+/* Button stack */
+.button-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Pill buttons */
+.pill-button {
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    border: 3px solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.pill-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pill-button:active {
+    transform: translateY(0);
+}
+
+/* Button variants */
+.pill-button.primary {
+    background-color: #8B1538;
+    border-color: #8B1538;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.pill-button.primary:hover {
+    background-color: #7A1230;
+    border-color: #7A1230;
+    box-shadow: 0 8px 20px rgba(139, 21, 56, 0.4);
+}
+
+.pill-button.secondary {
+    background-color: transparent;
+    border-color: #000000;
+    color: #000000;
+    font-weight: 500;
+}
+
+.pill-button.secondary:hover {
+    background-color: #8B1538;
+    border-color: #8B1538;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(139, 21, 56, 0.3);
+}
+
+.pill-button.tertiary {
+    background-color: transparent;
+    border-color: #8B1538;
+    color: #000000;
+    font-weight: 500;
+}
+
+.pill-button.tertiary:hover {
+    border-color: #7A1230;
+    box-shadow: 0 8px 20px rgba(139, 21, 56, 0.3);
+}
+
+/* Message display */
+.message-display {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #8B1538;
+    padding: 1rem;
+    background-color: rgba(139, 21, 56, 0.1);
+    border-radius: 0.5rem;
+    border: 2px solid rgba(139, 21, 56, 0.3);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-wrap;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .card {
+        padding: 2rem;
+        border-radius: 0.75rem;
+    }
+    
+    .heading {
+        font-size: 2rem;
+    }
+    
+    .body-text {
+        font-size: 1rem;
+    }
+    
+    .pill-button {
+        font-size: 1rem;
+        padding: 0.875rem 1.5rem;
+        min-height: 50px;
+    }
+}

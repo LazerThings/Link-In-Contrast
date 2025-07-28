@@ -1,0 +1,2 @@
+# Link In Contrast
+Link In Contrast is a link in bio template I made with the help of AI. It is very stylable. You can copy one of the 5 styles to make your own. If you have a style you like and you think others would like it, add the .css file as a pull request! It also comes with built in Alpine JS for if you want to incorporate that into your project. You can remove it.

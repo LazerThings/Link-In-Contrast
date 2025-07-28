@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link in Contrast</title>
+    <link rel="stylesheet" href="contrast.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card" x-data="{ message: 'Welcome to our website!' }">
+            <div class="card-content">
+                <h1 class="heading">Hello World</h1>
+                <p class="body-text">This is a link in bio built with AI. You can use multiple styles for it. Feel free to create your own!</p>
+            </div>
+            
+            <div class="button-stack">
+                <a href="#" class="pill-button primary">
+                    Primary Action
+                </a>
+                <a href="#" class="pill-button secondary">
+                    Secondary Action
+                </a>
+                <a href="#" class="pill-button tertiary">
+                    Learn More
+                </a>
+            </div>
+            
+            <div class="message-display">This card can be used for contact <a href="https://example.org">links!</a></div>
+        </div>
+    </div>
+</body>
+</html>
